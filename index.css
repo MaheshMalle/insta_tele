@@ -1,76 +1,125 @@
+/* General Styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light background color */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa; /* Softer background color */
+    color: #333; /* Darker text color for contrast */
 }
 
+/* Container Styling */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    border-radius: 10px; /* Rounded edges for a smoother look */
 }
 
+/* Logo Styling */
 .logo {
-    width: 150px; /* Adjust logo size */
+    width: 120px; /* Smaller, more balanced size */
     height: auto;
-    margin-bottom: 10px; /* Space between logo and name */
+    margin-bottom: 15px;
     border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow around the logo */
 }
 
+/* App Name */
 .app-name {
-    font-size: 24px;
-    margin-bottom: 20px; /* Space between name and center content */
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF; /* Brand color */
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
+/* Center Content */
 .center-content {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* Text Styling */
+.center-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter text for a professional look */
+}
+
+/* Action Button Styling */
 .action-button {
-    background-color: #007BFF; /* Button color */
-    color: white; /* Text color */
+    background-color: #007BFF;
+    color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px; /* Rounded corners */
+    padding: 12px 18px; /* Larger padding for better touch target */
+    border-radius: 50px; /* Fully rounded button */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase; /* Button text in uppercase for emphasis */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
     cursor: pointer;
-    margin-right: 10px; /* Space between button and text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for button elevation */
 }
 
 .action-button:hover {
-    background-color: #0056b3; /* Darker button color on hover */
-}
-
-.center-text {
-    font-size: 18px;
-    color: #333; /* Text color */
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 .action-button:disabled {
-    background-color: gray; /* Button color */
-   
+    background-color: #ccc; /* Lighter gray when disabled */
+    cursor: not-allowed;
 }
 
+/* Loader Styling */
 .loader {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed position to always show on the screen */
+    display: none;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+    border-radius: 8px;
     text-align: center;
     color: white;
-    font-size: 20px;
-    z-index: 9999; /* Ensure it's on top of other content */
-  }
-  
-  #loader-text {
+    font-size: 22px;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#loader-text {
     font-size: 18px;
     margin-top: 10px;
-  }
+    color: #ccc;
+}
+
+/* Animation for dots */
+@keyframes dot-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.dot {
+    font-size: 24px;
+    animation: dot-blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
