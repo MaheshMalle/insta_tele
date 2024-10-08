@@ -19,29 +19,9 @@ const loader = document.getElementById('loader');
 const dataArray = [
     {
         "id" : 1,
-        "name" : 'photo enhancing website',
-        "link":"https://www.krea.ai/home"
+        "name" : 'Online Dress AI checker',
+        "link":'https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On'
     },
-    {
-        "id" : 2,
-        "name" : "tatkal ticket extension",
-        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
-    },
-    {
-        "id" : 3,
-        "name" : "tatkal ticket extension",
-        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
-    },
-    {
-        "id" : 4,
-        "name" : "tatkal ticket extension",
-        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
-    },
-    {
-        "id" : 5,
-        "name" : "tatkal ticket extension",
-        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
-    }
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
