@@ -39,6 +39,15 @@ btn1.addEventListener('click', () => {
     console.log('Time stored in local storage:', currentTime);
     btn1.disabled = true;
     window.open('https://t.me/MSquareDealsOfficial', '_blank');
+    loader.style.display = 'block';
+    setTimeout(() => {
+        document.getElementById('loader').innerHTML = 'Congrats! You have got the link!';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 2000);
+        btn2.disabled = false;
+        console.log('Button 2 is now enabled after 20 seconds.');
+    }, 20000);
 });
 
 btn2.addEventListener('click', () => {
@@ -60,10 +69,11 @@ function handlePageLoad() {
 
         if (timeDifference < 20000) {
             loader.style.display = 'block';
-            console.log("condition 1");
             setTimeout(() => {
                 document.getElementById('loader').innerHTML = 'Congrats! You have got the link!';
-                loader.style.display = 'none';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 2000);
                 btn2.disabled = false;
                 console.log('Button 2 is now enabled after 20 seconds.');
             }, 20000 - timeDifference);
