@@ -47,7 +47,7 @@ btn1.addEventListener('click', () => {
         }, 2000);
         btn2.disabled = false;
         console.log('Button 2 is now enabled after 20 seconds.');
-    }, 20000);
+    }, 30000);
 });
 
 btn2.addEventListener('click', () => {
@@ -67,7 +67,7 @@ function handlePageLoad() {
 
         console.log('Time difference in milliseconds:', timeDifference);
 
-        if (timeDifference < 20000) {
+        if (timeDifference < 30000) {
             loader.style.display = 'block';
             setTimeout(() => {
                 document.getElementById('loader').innerHTML = 'Congrats! You have got the link!';
@@ -76,7 +76,7 @@ function handlePageLoad() {
                 }, 2000);
                 btn2.disabled = false;
                 console.log('Button 2 is now enabled after 20 seconds.');
-            }, 20000 - timeDifference);
+            }, 30000 - timeDifference);
 
         } else {
             btn2.disabled = false;
