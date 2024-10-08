@@ -26,6 +26,21 @@ const dataArray = [
         "id" : 2,
         "name" : "tatkal ticket extension",
         "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
+    },
+    {
+        "id" : 3,
+        "name" : "tatkal ticket extension",
+        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
+    },
+    {
+        "id" : 4,
+        "name" : "tatkal ticket extension",
+        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
+    },
+    {
+        "id" : 5,
+        "name" : "tatkal ticket extension",
+        "link" : 'https://chrome-stats.com/d/cddilnjpngoldpdhfiibcjenaphclbik',
     }
 ]
 const currentitemName = document.getElementById('currentItemName');
