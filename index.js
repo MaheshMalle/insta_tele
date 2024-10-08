@@ -34,7 +34,9 @@ btn1.addEventListener('click', () => {
     console.log('Time stored in local storage:', currentTime);
     btn1.disabled = true;
     window.open('https://t.me/MSquareDealsOfficial', '_blank');
-    loader.style.display = 'block';
+    setTimeout(() => {
+        loader.style.display = 'block';
+    }, 2000);
     setTimeout(() => {
         document.getElementById('loader').innerHTML = 'Congrats! You have got the link!';
         setTimeout(() => {
