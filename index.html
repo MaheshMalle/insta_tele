@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MSQUARE</title>
-    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet"> <!-- Better Fonts -->
+    <link rel="stylesheet" href="index.css"> <!-- External CSS File -->
 </head>
 <body>
     <div class="container">
@@ -13,19 +15,24 @@
         <h1 class="app-name">MSQUARE</h1>
         <h3>APP NAME :</h3>
         <span id="currentItemName"></span>
+
         <div class="center-content">
             <p class="center-text">Join the below Telegram Channel to get access to link.</p>
-            <button class="action-button" id="btn1">Telegram Link</button>
+            <button class="action-button" id="btn1">
+                <i class="fab fa-telegram-plane"></i> Telegram Link
+            </button>
         </div>
+
         <div id="loader" class="loader">
             <span id="loader-text">Checking<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
         </div>
+
         <div class="center-content">
             <p class="center-text">Link will be enabled if you join the telegram.</p>
             <button class="action-button" id="btn2" disabled="true">Get Link</button>
         </div>
     </div>
 
-    <script src="index.js"></script> <!-- Link to external JavaScript file -->
+    <script src="index.js"></script> <!-- External JS File -->
 </body>
 </html>
