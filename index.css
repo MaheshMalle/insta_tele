@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fa; /* Softer background color */
-    color: #333; /* Darker text color for contrast */
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e3f0); /* Soft gradient background */
+    color: #333;
 }
 
 /* Container Styling */
@@ -14,26 +14,31 @@ body {
     justify-content: center;
     height: 100vh;
     padding: 20px;
-    background-color: #ffffff; /* Clean white background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
-    border-radius: 10px; /* Rounded edges for a smoother look */
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    border-radius: 12px;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 500px; /* Limit container width */
+    margin: auto;
 }
 
 /* Logo Styling */
 .logo {
-    width: 120px; /* Smaller, more balanced size */
+    width: 130px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow around the logo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1s ease; /* Add bounce animation */
 }
 
 /* App Name */
 .app-name {
-    font-size: 28px;
-    font-weight: bold;
-    color: #007BFF; /* Brand color */
-    letter-spacing: 1px;
+    /*font-family: 'Poppins', sans-serif; /* Use Poppins font for a modern look */
+    font-size: 32px;
+    font-weight: 600;
+    color: #007BFF;
+    letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
@@ -49,31 +54,37 @@ body {
 .center-text {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #555; /* Slightly lighter text for a professional look */
+    color: #555;
+    font-weight: 500;
 }
 
 /* Action Button Styling */
 .action-button {
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%); /* Gradient for modern look */
     color: white;
     border: none;
-    padding: 12px 18px; /* Larger padding for better touch target */
-    border-radius: 50px; /* Fully rounded button */
+    padding: 12px 24px;
+    border-radius: 50px;
     font-size: 16px;
     font-weight: 500;
-    text-transform: uppercase; /* Button text in uppercase for emphasis */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for button elevation */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
 }
 
 .action-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background: linear-gradient(135deg, #0056b3 0%, #003f7f 100%);
 }
 
 .action-button:disabled {
-    background-color: #ccc; /* Lighter gray when disabled */
+    background: linear-gradient(135deg, #b0b0b0 0%, #808080 100%); /* Grey gradient for disabled state */
+    color: #f0f0f0; /* Lighter text color to match the disabled look */
     cursor: not-allowed;
+    box-shadow: none; /* Remove shadow for disabled state */
 }
 
 /* Loader Styling */
@@ -90,16 +101,10 @@ body {
     color: white;
     font-size: 22px;
     z-index: 9999;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for loader */
 }
 
-#loader-text {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #ccc;
-}
-
-/* Animation for dots */
+/* Dot Animation */
 @keyframes dot-blink {
     0% { opacity: 0; }
     50% { opacity: 1; }
@@ -123,3 +128,15 @@ body {
     animation-delay: 0.6s;
 }
 
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Animation for Bounce-in Logo */
+@keyframes bounceIn {
+    0% { opacity: 0; transform: translateY(-100%); }
+    70% { opacity: 0.9; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(0); }
+}
