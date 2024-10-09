@@ -73,7 +73,7 @@ function handlePageLoad() {
         if (timeDifference < 30000) {
             loader.style.display = 'block';
             setTimeout(() => {
-                // document.getElementById('loader').innerHTML = 'Congrats! You have got the link!';
+                // document.getElementById('loader').innerHTML = 'Congrats! You have got the link';
                 // setTimeout(() => {
                 //     loader.style.display = 'none';
                 // }, 2000);
