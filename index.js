@@ -22,6 +22,11 @@ const dataArray = [
         "name" : 'Online Dress AI checker',
         "link":'https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On'
     },
+    {
+        "id" : 2,
+        "name" : 'Train ticket booking app',
+        "link":'https://play.google.com/store/apps/details?id=com.cris.utsmobile'
+    },
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
