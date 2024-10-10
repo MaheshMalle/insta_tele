@@ -56,11 +56,11 @@ btn2.addEventListener('click', () => {
     window.open(dataArray[idParam].link, '_blank');
 });
 
-document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') {
-        onPageLoad(); // Refresh content if the page becomes visible
-    }
-});
+// document.addEventListener('visibilitychange', () => {
+//     if (document.visibilityState === 'visible') {
+//         onPageLoad(); // Refresh content if the page becomes visible
+//     }
+// });
 
 function handlePageLoad() {
     onPageLoad();
@@ -76,7 +76,7 @@ function handlePageLoad() {
         console.log('Time difference in milliseconds:', timeDifference);
 
         if (timeDifference < 30000) {
-            loader.style.display = 'block';
+            //loader.style.display = 'block';
             setTimeout(() => {
                 // document.getElementById('loader').innerHTML = 'Congrats! You have got the link';
                 // setTimeout(() => {
