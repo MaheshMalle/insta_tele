@@ -27,6 +27,11 @@ const dataArray = [
         "name" : 'Train ticket booking app',
         "link":'https://play.google.com/store/apps/details?id=com.cris.utsmobile'
     },
+    {
+        "id" : 3,
+        "name" : 'HairStyle Checking App',
+        "link":'https://play.google.com/store/apps/details?id=com.hiface'
+    },
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
