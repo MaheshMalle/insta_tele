@@ -32,6 +32,16 @@ const dataArray = [
         "name" : 'HairStyle Checking App',
         "link":'https://play.google.com/store/apps/details?id=com.hiface'
     },
+    {
+        "id" : 4,
+        "name" : 'Music App',
+        "link":'https://play.google.com/store/apps/details?id=ai.moises'
+    },
+    {
+        "id" : 5,
+        "name" : 'Photo Enhancing App',
+        "link":'https://www.krea.ai/home'
+    }
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
