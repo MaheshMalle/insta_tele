@@ -41,7 +41,12 @@ const dataArray = [
         "id" : 5,
         "name" : 'Photo Enhancing App',
         "link":'https://www.krea.ai/home'
-    }
+    },
+    {
+        "id" : 6,
+        "name" : 'Phone Spare Parts App',
+        "link":'https://www.maxbhi.com/'
+    },
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
