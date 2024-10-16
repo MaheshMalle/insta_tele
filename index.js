@@ -47,6 +47,11 @@ const dataArray = [
         "name" : 'Phone Spare Parts App',
         "link":'https://www.maxbhi.com/'
     },
+    {
+        "id" : 7,
+        "name" : 'Camera App',
+        "link":'https://play.google.com/store/apps/details?id=com.reincubate.camo'
+    },
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
