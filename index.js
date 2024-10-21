@@ -52,6 +52,11 @@ const dataArray = [
         "name" : 'Camera App',
         "link":'https://play.google.com/store/apps/details?id=com.reincubate.camo'
     },
+    {
+        "id" : 8,
+        "name" : 'Free Ott Apps',
+        "link":'https://iosmirror.cc/'
+    },
 ]
 const currentitemName = document.getElementById('currentItemName');
 const idParam = getId();
